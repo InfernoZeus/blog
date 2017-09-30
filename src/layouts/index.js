@@ -14,6 +14,7 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
+    let title = 'A Blog?'
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -31,7 +32,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            {title}
           </Link>
         </h1>
       )
@@ -52,7 +53,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            {title}
           </Link>
         </h3>
       )
